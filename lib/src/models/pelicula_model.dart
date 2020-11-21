@@ -93,6 +93,14 @@ class Pelicula {
     }
     return 'https://image.tmdb.org/t/p/w220_and_h330_face$posterPath';
   }
+
+  String getBackgroundImg() {
+    if(posterPath == null) {
+      return 'https://lh3.googleusercontent.com/proxy/aIPrHTALGjzAwpwo4swZ1h_d8NwlEQbmMnQGGId34UHGyaoTMsraZosYfWjHYQBJx84Ex_3eaHvTPUsplzzBbR4SOwcvfr3uKGdgJB89I1jMSAeV9YpAz4L--npBYB1WZA';
+    }
+    return 'https://image.tmdb.org/t/p/w220_and_h330_face$backdropPath';
+  }
+
 }
 
 enum OriginalLanguage { FR, EN, KO, JA }
